@@ -1,0 +1,53 @@
+.logo{
+    font-size: 28px;
+    font-family:Helvetica, sans-serif;
+    text-align: center;
+}
+.naveg{
+    margin: 0 50px;
+}
+body{
+    background-image: url('./assets/Background-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.white{
+    color: #fff;
+    margin-top: 100px;
+    margin-right: 30px;
+}
+.entrar{
+    margin-left: 150px;
+}
+.corpo{
+    margin-top: 150px;
+}
+.item-corpo{
+    font-size: 29px;
+    display: flex;
+    justify-content: flex-end;
+}
+.text > h1{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bataum{
+    font-size: 29px;
+    float: right;
+    margin-top: 20px;
+}
+@media (max-width:765px){
+    .entrar{
+        margin: 0 5px;
+    }
+    .criar{
+        margin-right: 500pc;
+    }
+    .naveg{
+        margin: 0;
+        margin-bottom: 15px;
+    }
+}
