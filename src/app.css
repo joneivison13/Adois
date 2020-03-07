@@ -81,7 +81,7 @@
 }
 .destaques-card{
     display: inline-block;
-    width: 30%;
+    width: 25%;
     height: 180px;
     min-height: 180px;
     margin:0 50px;
@@ -106,12 +106,6 @@
     float: left;
     margin:0 15px;
 }
-@media (max-width:1024px){
-    .vantagens-card{
-        width: 40%;
-        margin: 15px;
-    }
-}
 @media (max-width:850px){
     .texto-monte{
         width: 55%;
@@ -133,7 +127,7 @@
         margin-bottom: 15px;
     }
 }
-@media (max-width:550px){
+@media (max-width:650px){
     .item-corpo{
         text-align: start;
         margin: 5px 20px;
@@ -141,5 +135,9 @@
     }
     .bataum{
         margin: 15px;
+    }
+    .vantagens-card, .destaques-card{
+        width: 80%;
+        margin: 10px 30px;
     }
 }

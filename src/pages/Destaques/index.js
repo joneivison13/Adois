@@ -19,24 +19,24 @@ export default class Destaques extends Component {
                 <div className="Destaques" style={{ fontSize: "100" }}>
                     <p className="destaquer-p" style={{textAlign:"center"}}><strong>Destaques</strong> de nossa plataforma de loja virtual</p>
                     <div className="destaques-card">
-                    <img src={Cell} alt="" className="icon-destaques" width="20px" />
+                    <img src={Cell} alt="" className="icon-destaques mt-3" width="20px" />
                     <p className="text-icon">
-                        <h5 className="titulo-icon">VERSÃO DESKTOP & MOBILE</h5>
+                        <h5 className="titulo-icon mt-3">VERSÃO DESKTOP & MOBILE</h5>
                         Nossa plataforma trabalha com <span className="bold">layouts responsivos</span> e se adapta corretamente, tanto em computadores pessoais como celulares e tablets, seguindo as recomendações do Google.
                     </p>
                     </div>
                     <div className="destaques-card">
-                    <img src={Cadeado} alt="" className="icon-destaques" width="20px" />
+                    <img src={Cadeado} alt="" className="icon-destaques mt-3" width="20px" />
                     <p className="text-icon">
-                        <h5 className="titulo-icon">SEGUANÇA & RAPIDEZ</h5>
+                        <h5 className="titulo-icon mt-3">SEGUANÇA & RAPIDEZ</h5>
                         Nossa plataforma trabalha com <span className="bold">rapidez</span> para a melhor produção de sua Loja Virtual, site, ou aplicações mobiles.
                         Nossa plataforma também proucura o melhor local custo benefício e de <span className="bold">alta segurança</span> para ser feito a sua hospedagem.
                  </p>
                     </div>
                     <div className="destaques-card">
-                    <img src={Desktop} alt="" className="icon-destaques" width="20px" />
+                    <img src={Desktop} alt="" className="icon-destaques mt-3" width="20px" />
                     <p className="text-icon">
-                        <h5 className="titulo-icon">LAYOUT POR PÁGINAS</h5>
+                        <h5 className="titulo-icon mt-3">LAYOUT POR PÁGINAS</h5>
                         Insira <span className="bold">banners, fotos e imagens diferenciadas</span> ou crie visuais distintos com um preço ótimo para suas capa, páginas de departamento, checkout, página de exibição de produtos, entre outras.
                     </p>
                     </div>
