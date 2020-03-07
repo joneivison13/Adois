@@ -6,10 +6,15 @@
 .naveg{
     margin: 0 50px;
 }
-body{
+.sessao{ 
     background-image: url('./assets/Background-2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    /* height: 80%; */
+    clear: both;
+    padding-bottom: 100px;
+    /* margin-bottom: 50px; */
 }
 .white{
     color: #fff;
@@ -36,8 +41,85 @@ body{
 }
 .bataum{
     font-size: 29px;
-    float: right;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    display: flex;
+    width: 140px;
+    margin-left: 80%;
+}
+.Destaques{
+    background-color: #F0F0ED;
+    padding-left: 22px;
+    border-top: 3px solid   #ECECE8;
+    border-bottom: 3px solid   #ECECE8;
+    padding-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+}
+.Destaques > .destaquer-p{
+    font-weight: normal;
+    font-size: 35px;
+}
+.imagen-users{
+    margin: 20px 20px;
+}
+.texto-monte{
+    display: inline-block;
+    width: 60%;
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 50px;
+    color: #B4B4B4;
+}
+.verde{
+    color: #8FC944;
+    font-weight: 700;
+}
+.bold{
+    font-weight: bold;
+    color: rgb(90, 90, 90);
+}
+.destaques-card{
+    display: inline-block;
+    width: 30%;
+    height: 180px;
+    min-height: 180px;
+    margin:0 50px;
+}
+.icon-destaques{
+    float: left;
+    margin:0 15px;
+}
+.vantagens-title{
+    font-size: 35px;
+    text-align: center;
+    font-weight: normal;
+}
+.vantagens-card{
+    display: inline-block;
+    width: 500px;
+    height: 180px;
+    min-height: 180px;
+    margin:0 50px;
+}
+.vantagen-icon{
+    float: left;
+    margin:0 15px;
+}
+@media (max-width:1024px){
+    .vantagens-card{
+        width: 40%;
+        margin: 15px;
+    }
+}
+@media (max-width:850px){
+    .texto-monte{
+        width: 55%;
+    }
+    .imagen-users{
+        width: 200px;
+        margin: 30px 10px;
+    }
 }
 @media (max-width:765px){
     .entrar{
@@ -56,5 +138,8 @@ body{
         text-align: start;
         margin: 5px 20px;
         display: block;
+    }
+    .bataum{
+        margin: 15px;
     }
 }
