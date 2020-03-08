@@ -106,9 +106,50 @@
     float: left;
     margin:0 15px;
 }
+.footer{
+    background-color: rgb(15, 15, 15);
+    color: #fff;
+    margin-top: 50px;
+}
+.resumo-footer{
+    margin:50px 250px;
+    display: inline-block;
+    text-align: center;
+}
+.contato-footer{
+    display: inline-block;
+    text-align: center;
+}
+.title-footer{
+    font-size: 22px;
+}
+.contatos-title{
+    display: inline-block;
+    font-size: 18px;
+}
+.contatos-body{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: #B4B4B4;
+}
+
+@media (max-width:1024px){
+    .vantagens-card{
+        width: 40%;
+        margin: 15px;
+    }
+    .destaques-card{
+        width: 25%;
+        margin: 15px;
+    }
+    .resumo-footer, .contato-footer{
+        margin: 10px auto;
+    }
+}
 @media (max-width:850px){
     .texto-monte{
-        width: 55%;
+        width: 50%;
     }
     .imagen-users{
         width: 200px;
@@ -126,6 +167,17 @@
         margin: 0;
         margin-bottom: 15px;
     }
+    .vantagens-card{
+        width: 50%;
+        margin: 20px;
+    }
+    .destaques-card{
+        width: 20%;
+        margin: 15px;
+    }
+    .resumo-footer, .contato-footer{
+        margin: 10px auto;
+    }
 }
 @media (max-width:650px){
     .item-corpo{
@@ -138,6 +190,23 @@
     }
     .vantagens-card, .destaques-card{
         width: 80%;
-        margin: 10px 30px;
+        margin: 10px 20px;
+    }
+    .resumo-footer, .contato-footer{
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+@media (max-width:400px){
+    .texto-monte{
+        width: 85%;
+        margin: 20px;
+    }
+    .imagen-users{
+        display: block;
+        margin: 10px auto;
+    }
+    .resumo-footer, .contato-footer{
+        margin: 20px auto;
     }
 }
