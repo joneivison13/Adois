@@ -1,27 +1,26 @@
-import api from '../../services/api'
+// import api from '../../services/api'
 import React, { useState } from 'react'
 
-export default function Login({ history }) {
-    const [email, setEmail] = useState('')
+export default function Login() {
+    // const [email, setEmail] = useState('') parametro da func Loggin({ history })
 
 
-    async function handleSubmit(event) {
-        event.preventDefault()
+    // async function handleSubmit(event) {
+    //     event.preventDefault()
 
-        const response = await api.post('/sessions', { email })
+    //     const response = await api.post('/sessions', { email })
 
-        const { _id } = response.data;
+    //     const { _id } = response.data;
 
-        if (response.status !== 200) {
-            alert('Não foi possivel efetuar o Login')
-        } else {
-            localStorage.setItem('user', _id)
-            history.push('/dashboard')
+    //     if (response.status !== 200) {
+    //         alert('Não foi possivel efetuar o Login')
+    //     } else {
+    //         localStorage.setItem('user', _id)
 
-        }
+    //     }
 
 
-    }
+    // }
     return (
         <>
             <form onSubmit={handleSubmit}>
