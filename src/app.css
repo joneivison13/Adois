@@ -134,6 +134,39 @@
     color: #B4B4B4;
 }
 
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 20px; */
+    width: 40%;
+    border-radius: 30px;
+    margin: 10px;
+}
+form{
+    display: inline-block;
+    text-align: center;
+}
+.form-card{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.form-card input{
+    height: 40px;
+    width: 320px;
+    border-radius: 15px;
+    padding-left: 10px;
+    font-size: 22px;
+}
+.form-card label{
+    font-size: 22px;
+}
+
+.form-card button{
+    padding: 5px 100px;
+}
+
 @media (max-width:1024px){
     .vantagens-card, .destaques-card{
         width: 40%;
