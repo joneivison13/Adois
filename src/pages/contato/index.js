@@ -10,7 +10,7 @@ export default class Contato extends Component {
                     <Header />
                 </div>
 
-                <div className="card form mx-auto mt-5">
+                <div className="form mx-auto mt-5">
                     <form>
                         <div className="form-card">
                             <label htmlFor="name">Seu Nome</label>

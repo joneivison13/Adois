@@ -1,3 +1,5 @@
+body{background-color: rgb(250, 250, 250);}
+
 .logo{
     font-size: 28px;
     font-family:Helvetica, sans-serif;
@@ -138,10 +140,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 20px; */
     width: 40%;
     border-radius: 30px;
     margin: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+    box-shadow: 1px 1px 7px black;
 }
 form{
     display: inline-block;
@@ -179,6 +183,12 @@ form{
     .resumo-footer, .contato-footer{
         margin: 10px auto;
     }
+    .form{
+        width: 60%;
+    }
+    .form-card input{
+        width: 200px;
+    }
 }
 @media (max-width:850px){
     .texto-monte{
@@ -187,6 +197,9 @@ form{
     .imagen-users{
         width: 200px;
         margin: 30px 10px;
+    }
+    .form{
+        width: 90%;
     }
 }
 @media (max-width:765px){
@@ -241,5 +254,11 @@ form{
     }
     .resumo-footer, .contato-footer{
         margin: 20px auto;
+    }
+    .form{
+        width: 100%;
+    }
+    .form-card input{
+        width: 90%;
     }
 }
