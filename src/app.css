@@ -257,8 +257,9 @@ form{
     }
     .form{
         width: 100%;
+        margin: 10px;
     }
     .form-card input{
-        width: 90%;
+        width: 80%;
     }
 }
