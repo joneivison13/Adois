@@ -12,7 +12,7 @@ export default class Main extends Component {
             <h4 className="item-corpo">Sem comissões por venda</h4>
             <h4 className="item-corpo">Banner, logo e imagem incluso</h4>
 
-            <a href="" className="btn btn-success bataum"> Assine já</a>
+            <a href="/planos" className="btn btn-success bataum"> Assine já</a>
         </div>
       </div>
     );

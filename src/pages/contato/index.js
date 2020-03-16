@@ -3,6 +3,32 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 
 export default class Contato extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            nome:'',
+            email:'',
+            title:'',
+            assunto:'',
+        };
+      }
+      handleSubmit = e => {
+          e.preventDefault()
+          alert(`o nome enviado foi ${this.state.nome}, email foi ${this.state.email}, assunto foi ${this.state.assunto}, e titulo foi ${this.state.title}`)
+      }
+
+      handleChange = e => {
+          this.setState({ nome: e.target.value })
+      }
+      handleChange1 = e => {
+          this.setState({ email: e.target.value })
+      }
+      handleChange2 = e => {
+          this.setState({ title: e.target.value })
+      }
+      handleChange3 = e => {
+          this.setState({ assunto: e.target.value })
+      }
     render() {
         return (
             <div className="form-corpo">
@@ -11,13 +37,14 @@ export default class Contato extends Component {
                 </div>
 
                 <div className="form mx-auto mt-5">
-                    <form>
+                    <form onSubmit={this.handleSubmit}>
                         <div className="form-card">
                             <label htmlFor="name">Seu Nome.</label>
                             <input
                                 type="text"
                                 name="name"
                                 placeholder="Digite aqui seu nome."
+                                onChange={this.handleChange}
                                 required
                             />
                         </div>
@@ -27,10 +54,11 @@ export default class Contato extends Component {
                                 htmlFor="email">
                                 E-Mail de contato.
                             </label>
-                            <input 
-                            type="email" 
-                            name="email" 
-                            placeholder="Digite aqui seu email"
+                            <input
+                                type="email"
+                                name="email"
+                                onChange={this.handleChange1}
+                                placeholder="Digite aqui seu email"
                             />
                         </div>
 
@@ -42,6 +70,7 @@ export default class Contato extends Component {
                             <input
                                 type="text"
                                 name="titulo"
+                                onChange={this.handleChange2}
                                 placeholder="Digite aqui o titulo do assunto."
                             />
                         </div>
@@ -51,12 +80,19 @@ export default class Contato extends Component {
                                 htmlFor="duvida">
                                 Digite aqui sua dúvida.
                         </label>
-                            <textarea name="duvida" cols="30" rows="4" placeholder="Digíte aqui a sua dúvida."></textarea>
+                            <textarea
+                                name="duvida"
+                                cols="30"
+                                rows="4"
+                                placeholder="Digíte aqui a sua dúvida."
+                                onChange={this.handleChange3}>
+
+                            </textarea>
                         </div>
                         <button type="submit" className="btn btn-success px-5 py-2 m-2">Enviar</button>
                     </form>
                 </div>
-                <Footer/>
+                <Footer />
             </div>
         )
     }

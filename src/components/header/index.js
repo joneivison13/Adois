@@ -23,7 +23,7 @@ class Header extends Component {
                         </li>
 
                         <li className="nav-item naveg">
-                            <a className="btn btn-primary entrar" href="/">Entrar <span className="sr-only">(Página atual)</span></a>
+                            <a className="btn btn-primary entrar" href="/login">Entrar <span className="sr-only">(Página atual)</span></a>
                         </li>
                         <li className="nav-item">
                             <a className="btn btn-success criar" href="/auth">inscrever-se gratuitamente</a>

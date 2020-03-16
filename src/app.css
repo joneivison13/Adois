@@ -269,11 +269,18 @@ form {
     text-align: center;
 }
 
+.botao-login{
+    width: 90%;
+    border-radius: 5px;
+}
 .planos-components {
     border-top: 1px solid #ddd;
     width: 90%;
     margin: 20px auto;
     font-size: 18px;
+}
+.Entrar-tela{
+    background-image: url('./assets/background.jpg');
 }
 
 @media (max-width:1024px) {
@@ -378,5 +385,8 @@ form {
     }
     .form-card input {
         width: 90%;
+    }
+    .form-login{
+        width: 280px;
     }
 }
